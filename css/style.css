@@ -225,6 +225,13 @@ navigation section
   padding:0;
   margin:0 auto;
 }
+
+.logo-wrapper{
+  padding: 15rem 5rem;
+  margin:10rem auto;
+}
+
+
 .custom-navbar .navbar-brand .navbar-toggle {
     background: #95dde2;
     padding: 4px 6px;
@@ -396,11 +403,13 @@ team section
 #team {
   text-align: center;
 }
+
 #team h3 {
   color: #014b8e;
   font-size: 14px;
   font-weight: bold;
 }
+
 #team .col-md-3 {
   padding-top: 20px;
   padding-bottom: 20px;
@@ -458,7 +467,6 @@ team section
 #team .social-icon li a:hover {
   color: #89aad5;
 }
-
 /* ==========================================================================
 portfolio section
 ========================================================================== */
@@ -478,6 +486,10 @@ portfolio section
 #portfolio img:hover {
   opacity: 0.5;
 }
+.portfolio-img{
+  padding:10%;
+}
+
 /* FILTER CSS */
 .filter-wrapper {
     width: 100%;
