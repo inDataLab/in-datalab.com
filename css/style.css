@@ -38,7 +38,7 @@ h1, h2, h3, h4 {
 
 p {
   line-height: 28px;
-  font-size: 15px;
+  font-size: 18px;
 }
 
 a {
@@ -52,11 +52,11 @@ hr {
 
 .section-title strong {
 	color: #014b8e;
-  	font-size: 56px;
+  font-size: 56px;
 }
 .section-title2 strong {
   color: #fff;
-    font-size: 56px;
+  font-size: 56px;
 }
 
 .section-title h1 {
@@ -67,13 +67,17 @@ hr {
   padding-bottom: 32px;
 }
 
+.section-border{
+  border-bottom:1px solid #CCC;
+}
+
 .medium-icon {
   font-size: 32px !important;
 }
 
 #work,#about, #team, 
 #portfolio, #pricing, #contact {
-   padding-top: 100px;
+  padding-top: 100px;
   padding-bottom: 100px;
 }
 
@@ -227,8 +231,9 @@ navigation section
 }
 
 .logo-wrapper{
-  padding: 15rem 5rem;
-  margin:10rem auto;
+  text-align:left;
+  margin: 4rem 0;
+  margin-left: 1rem;
 }
 
 
@@ -353,9 +358,22 @@ work section
 about section
 ========================================================================== */
 #about {
-  background: #3B3B3B;
-  color: #ffffff;
+  text-align: center;
 }
+
+#about :after{
+  background: url('../images/bg-pluto.jpg') no-repeat center center;
+  background-size: cover;
+  opacity: 0.6;
+}
+
+#about_logo{
+  padding-top: 4vh;
+  margin: 0 auto;
+  display: flex;
+  justify-content:center;
+}
+
 .nav-tabs {
   margin-top: 20px;
   border-bottom: 1px solid #606060;
@@ -378,14 +396,14 @@ about section
 .nav-tabs > li.active > a,
 .nav-tabs > li.active > a:hover,
 .nav-tabs > li.active > a:focus {
-  color: #89aad5;
+  color: #fa6923;
   cursor: default;
   background-color: transparent;
   border: 1px solid transparent;
   border-bottom-color: transparent;
 }
 .tab-content {
-  padding-top: 20px;
+  text-align: left;
 }
 
 .tab-content a {
@@ -395,6 +413,23 @@ about section
 .tab-content a:hover, .tab-content a:link {
 	color: #FF0;
 	text-decoration: none;
+}
+.desc-align{
+  display: flex;
+  flex-direction:column;
+  justify-content:center;
+  margin-top: 5rem;
+  text-align: center;
+}
+
+.desc-pluto{
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
+.application_img{
+   margin:0;
+   text-align: center;
+   width: 100%;
 }
 
 /* ==========================================================================
@@ -471,7 +506,7 @@ team section
 portfolio section
 ========================================================================== */
 #portfolio {
-  background-color: #f6f6f6;
+  background-color: #FFF;
   text-align: center;
   }
 #portfolio .container {
@@ -482,12 +517,25 @@ portfolio section
 #portfolio img {
   width: 100%;
   transition: all 0.4s ease-in-out;
+ 
 }
 #portfolio img:hover {
   opacity: 0.5;
 }
 .portfolio-img{
   padding:10%;
+}
+#partners-row{
+  display: flex;
+  flex-direction: row;
+  margin:0 auto;
+  width:50%;
+  height:auto;
+}
+
+#partners{
+  align-items: center;
+  justify-content: center;
 }
 
 /* FILTER CSS */
@@ -627,7 +675,7 @@ pricing section
 contact section
 ========================================================================== */
 #contact {
-  background: #3B3B3B url('../images/contact-bg.jpg') no-repeat center center;
+  background: url('../images/contact-bg.jpg') no-repeat center center;
   background-size: cover;
   color: #ffffff;
 }
@@ -671,6 +719,10 @@ contact section
 }
 #contact input[type="submit"]:hover {
   color: #000000;
+}
+
+#contact .map{
+  padding-top:5vh;
 }
 
 
